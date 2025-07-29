@@ -1,0 +1,16 @@
+{
+    "app_version": "1.0.0",
+    "app_name": "Noctialisy Stream Controller",
+
+    "mixitup_api_url": "http://localhost:8911/api/v2/",
+    "mixitup_api_commands_address": "commands/",
+
+    "obs_websocket_url": "ws://localhost:4455",
+    "obs_websocket_password": "",
+    
+    "vtube_studio_websocket_url": "ws://localhost:8001",
+    "vtube_studio_websocket_token": "",
+    "vtube_studio_plugin_name": "NoctialisyPlugin",
+    "vtube_studio_plugin_developer": "Noctialisy",
+    "vtube_studio_plugin_version": "1.0.0"
+}

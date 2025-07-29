@@ -1,0 +1,31 @@
+This is a collection of scripts I started writing down to handle tasks during live streams.
+It uses AHKv2 (Auto HotKey) to fire up scripts on specific combinations and can be extended
+to support a secondary device like a secondary numpad or a keyboard.
+
+For the moment the available modules are:
+    - Vtube Studio (Can trigger any model hotkeys by passing it the hotkey name, ex: Headpats)
+    - OBS (Can trigger any OBS function - Requires more development)
+    - MixItUp (Can run any command passed as a parameter)
+    - Voicemeeter (Can handle muting specific resources, volumes and other stuff - Requires AHK)
+
+The way this app works is that it stays in the background and listens to the keys configured
+in MainController/MainScript.ahk to fire scripts in the pythonScripts folder.
+All python scripts can also be called individually from something like MixItUp or any other
+bot if you don't want to deal with specific keyboard combinations and layouts.
+
+All the services should run on localhost only, make sure your firewall is set correctly.
+All the configurations and endpoints should be set in the settings.default.json file.
+All default configurations should work by default, but you should double check.
+Once configured, rename the settings.default.json to settings.json.
+
+Note:
+Interceptor is supported in both the main script and code, but not included in the source
+because of performance reasons, if you want to add Interceptor you can look at their
+specific repo and follow the guide there.
+
+
+Tech Requirements:
+    AHKv2
+    Python 3.12+
+    MixItUp Bot
+    AHKv2 - Interception (Optional for multiple keyboards)
