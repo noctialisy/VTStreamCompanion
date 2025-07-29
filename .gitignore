@@ -42,4 +42,5 @@ __pycache__/
 
 # Ignore settings files
 settings.json
+MainController/HotkeysDef.ahk
 MainController/AHKv2/*
